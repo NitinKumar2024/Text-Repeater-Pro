@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative_all_layout"
+    android:padding="16dp">
+
+    <!-- Image (App Logo) -->
+    <ImageView
+        android:id="@+id/image_app_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/textrepeterpro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Music Name -->
+    <TextView
+        android:id="@+id/fontStyleTextView"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:text="Music Name"
+        android:minLines="@integer/material_motion_duration_long_1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/image_app_logo"
+        android:layout_centerVertical="true"/>
+
+    <!-- Share Icon -->
+    <ImageView
+        android:id="@+id/shareImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/share"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Rename Icon -->
+    <ImageView
+        android:id="@+id/copyImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/copy"
+        android:layout_toStartOf="@id/shareImageView"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"/>
+
+</RelativeLayout>
